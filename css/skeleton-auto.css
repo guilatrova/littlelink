@@ -87,10 +87,9 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 html {
   font-size: 100%;
-  color-scheme: light;
+  color-scheme: light dark;
 }
 body {
-  background-color: #fff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -165,6 +164,7 @@ pre,
 blockquote,
 dl,
 figure,
+p,
 ol {
   margin-bottom: 2.5rem;
 }
