@@ -1,0 +1,29 @@
+/* Preserve the original layout while using semantic headings and landmarks. */
+.page-content {
+  margin-top: 10%;
+}
+
+.profile-name {
+  margin: 0.83em 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: normal;
+}
+
+.link-heading {
+  margin: 1em 0;
+  font-size: 1.17em;
+}
+
+.privacy-footer {
+  text-align: center;
+}
+
+/* Both rings remain visible against light, dark and branded backgrounds. */
+a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #000;
+}
