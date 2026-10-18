@@ -26,7 +26,9 @@
   --width: 560px;
   --target: 48px;
   --avatar: 80px;
-  --icon: 22px;
+  --icon: 24px;
+  --pixel-step: 6px;
+  --pixel-shape: polygon(var(--pixel-step) 0, calc(100% - var(--pixel-step)) 0, calc(100% - var(--pixel-step)) var(--pixel-step), 100% var(--pixel-step), 100% calc(100% - var(--pixel-step)), calc(100% - var(--pixel-step)) calc(100% - var(--pixel-step)), calc(100% - var(--pixel-step)) 100%, var(--pixel-step) 100%, var(--pixel-step) calc(100% - var(--pixel-step)), 0 calc(100% - var(--pixel-step)), 0 var(--pixel-step), var(--pixel-step) var(--pixel-step));
   --border: 1px;
   --corner: 4px;
   --focus: 2px;
@@ -90,6 +92,8 @@ a:focus-visible {
   outline-offset: var(--corner);
 }
 .button {
+  --button-fill: var(--surface);
+  --button-edge: var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,28 +102,39 @@ a:focus-visible {
   min-height: calc(var(--target) + var(--space-2));
   padding: var(--space-3) var(--space-5);
   margin-bottom: var(--space-2);
-  border: var(--border) solid var(--line);
-  border-radius: var(--corner);
-  background: var(--surface);
+  border: 0;
+  border-radius: 0;
+  isolation: isolate;
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
   line-height: 1.5;
-  transition: background var(--duration), border-color var(--duration), transform var(--duration);
+  transition: transform var(--duration);
 }
+.button::before, .button::after {
+  content: "";
+  position: absolute;
+  clip-path: var(--pixel-shape);
+  pointer-events: none;
+  transition: background var(--duration);
+}
+.button::before { inset: 0; z-index: -2; background: var(--button-edge); }
+.button::after { inset: var(--border); z-index: -1; background: var(--button-fill); }
 .button:hover {
-  background: var(--hover);
-  border-color: var(--accent);
+  --button-fill: var(--hover);
+  --button-edge: var(--accent);
   transform: translateY(-2px);
 }
-.icon { width: var(--icon); height: var(--icon); object-fit: contain; }
-.page-content > .button-default:first-of-type {
-  background: var(--accent);
+.pixel-symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+.pixel-icon { width: var(--icon); height: var(--icon); flex: none; fill: currentColor; shape-rendering: crispEdges; }
+.button .pixel-icon { color: var(--accent); }
+.button-newsletter {
+  --button-fill: var(--accent);
+  --button-edge: var(--accent);
   color: var(--bg);
-  border-color: var(--accent);
 }
-.page-content > .button-default:first-of-type:hover { background: var(--text); }
-.button-paypal .icon, .button-github .icon, .button-default:not(:first-of-type) .icon { filter: brightness(0) invert(1); }
+.button-newsletter .pixel-icon { color: inherit; }
+.button-newsletter:hover { --button-fill: var(--text); }
 .page-content > br { display: none; }
 .link-heading {
   margin: var(--space-6) 0 var(--space-4);
