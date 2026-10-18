@@ -1,76 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-  <!-- Page Information
+  <head>
+    <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Gui Latrova</title>
-  <meta name="description" content="Explore Gui Latrova's Python articles, Python like a PRO book, software projects, newsletter and social profiles.">
-  <meta name="author" content="Gui Latrova">
-  <link rel="canonical" href="https://www.guilatrova.dev/">
-  <meta name="theme-color" content="#141714">
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Gui Latrova">
-  <meta property="og:description" content="Python articles, Python like a PRO, software projects, a newsletter and social profiles by Gui Latrova.">
-  <meta property="og:url" content="https://www.guilatrova.dev/">
-  <meta property="og:site_name" content="Gui Latrova">
-  <meta property="og:image" content="https://www.guilatrova.dev/images/avatar@2x.png">
-  <meta property="og:image:width" content="128">
-  <meta property="og:image:height" content="128">
-  <meta property="og:image:alt" content="Gui Latrova">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@guilatrova">
-  <meta name="twitter:creator" content="@guilatrova">
-  <meta name="twitter:title" content="Gui Latrova">
-  <meta name="twitter:description" content="Python articles, Python like a PRO, software projects, a newsletter and social profiles by Gui Latrova.">
-  <meta name="twitter:image" content="https://www.guilatrova.dev/images/avatar@2x.png">
-  <meta name="twitter:image:alt" content="Gui Latrova">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": "https://www.guilatrova.dev/#person",
-      "name": "Gui Latrova",
-      "url": "https://www.guilatrova.dev/",
-      "image": "https://www.guilatrova.dev/images/avatar@2x.png",
-      "jobTitle": "Software Engineer",
-      "description": "Software engineer writing about Python and good software.",
-      "sameAs": [
-        "https://twitter.com/intent/user?screen_name=guilatrova",
-        "https://github.com/guilatrova/",
-        "https://www.linkedin.com/in/guilhermelatrova/",
-        "https://guicommits.com"
-      ]
-    }
-  </script>
+    <meta charset="utf-8" />
+    <title>Gui Latrova</title>
+    <meta
+      name="description"
+      content="Explore Gui Latrova's Python articles, Python like a PRO book, software projects, newsletter and social profiles."
+    />
+    <meta name="author" content="Gui Latrova" />
+    <link rel="canonical" href="https://www.guilatrova.dev/" />
+    <meta name="theme-color" content="#141714" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Gui Latrova" />
+    <meta
+      property="og:description"
+      content="Python articles, Python like a PRO, software projects, a newsletter and social profiles by Gui Latrova."
+    />
+    <meta property="og:url" content="https://www.guilatrova.dev/" />
+    <meta property="og:site_name" content="Gui Latrova" />
+    <meta
+      property="og:image"
+      content="https://www.guilatrova.dev/images/avatar@2x.png"
+    />
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
+    <meta property="og:image:alt" content="Gui Latrova" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@guilatrova" />
+    <meta name="twitter:creator" content="@guilatrova" />
+    <meta name="twitter:title" content="Gui Latrova" />
+    <meta
+      name="twitter:description"
+      content="Python articles, Python like a PRO, software projects, a newsletter and social profiles by Gui Latrova."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.guilatrova.dev/images/avatar@2x.png"
+    />
+    <meta name="twitter:image:alt" content="Gui Latrova" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://www.guilatrova.dev/#person",
+        "name": "Gui Latrova",
+        "url": "https://www.guilatrova.dev/",
+        "image": "https://www.guilatrova.dev/images/avatar@2x.png",
+        "jobTitle": "Software Engineer",
+        "description": "Software engineer writing about Python and good software.",
+        "sameAs": [
+          "https://twitter.com/intent/user?screen_name=guilatrova",
+          "https://github.com/guilatrova/",
+          "https://www.linkedin.com/in/guilhermelatrova/",
+          "https://guicommits.com"
+        ]
+      }
+    </script>
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="icon" type="image/png" href="images/avatar.png">
-  <link rel="manifest" href="site.webmanifest">
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="masthead wrap"><a class="brand" href="./" aria-label="Gui Latrova home"><img src="images/avatar@2x.png" alt="" width="32" height="32">gui<span> / latrova</span></a><nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="https://cv.guilatrova.dev">Résumé ↗</a></nav></header>
-<main id="main" class="wrap">
-<section class="hero" aria-labelledby="hero-title"><div><p class="eyebrow"><span class="status" aria-hidden="true"></span> ENGINEER. MAKER. ALWAYS CURIOUS.</p><h1 id="hero-title">Hi, I'm Gui<span>I build things.</span></h1><p class="intro"><strong>Software, stories, and little experiments.</strong> A software engineer in Brazil, turning curiosity into useful things for the world.</p><div class="hero-links"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/guilatrova/">Find me on GitHub ↗</a></div></div>
-<div class="art" aria-hidden="true"><svg viewBox="0 0 320 320"><path class="outline" d="M32 264H288M160 24V284M48 56H272V280H48Z"/><path class="stem" d="M152 120h16v120h-16zM136 160h16v16h-16zM120 144h16v16h-16zM168 192h16v16h-16zM184 176h16v16h-16z"/><path class="leaf" d="M56 112h48v16h32v16h16v32h-48v-16H72v-16H56zM184 144h16v-16h32v-16h32v48h-16v16h-32v16h-32z"/><path class="light" d="M136 40h32v16h16v16h16v32h-16v16h-16v24h-16v-24h-16v-16h-16V72h16zM56 112h48v16h32v16H88v-16H56zM216 128h16v-16h32v16h-16v16h-32z"/><path class="leaf" d="M112 232h96v16h-8v32h-16v16h-48v-16h-16v-32h-8z"/><path class="light" d="M104 224h112v16H104z"/><path class="stem" d="M168 248h32v32h-16v16h-16z"/><path class="spark" d="M240 48h8v8h8v8h-8v8h-8v-8h-8v-8h8zM64 200h8v8h8v8h-8v8h-8v-8h-8v-8h8z"/><path class="light" d="M272 208h8v8h-8zM80 64h8v8h-8z"/></svg><span class="caption">A LITTLE CURIOSITY. A LOT OF GROWTH.</span></div></section>
-<div class="intro-bar"><span>Independent mind. Builder at heart.</span><span>BASED IN BRAZIL · CONNECTED EVERYWHERE</span></div>
-<section id="projects" class="section" aria-labelledby="projects-title"><div class="section-head"><div><p class="label"><span>01 /</span> Made with curiosity</p><h2 id="projects-title">From idea to out there.</h2></div></div><div class="project-grid"><a class="project" href="https://dayvid.ai"><div class="project-top"><svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12v2h2v2h2V8h3v10h-3v-2h-2v2H3zM6 3h2v2H6zM10 2h2v3h-2z" fill-rule="evenodd"/></svg><span class="arrow" aria-hidden="true">↗</span></div><h3>Dayvid</h3><p>Your music, made visual. Turn a song into a publish-ready video with AI.</p><span class="tag">AI + CREATIVITY</span></a>
-<a class="project" href="https://bibliacomapocrifos.com"><div class="project-top"><svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h8v2h4V4h8v15h-8v2h-4v-2H2zM10 8v9h4V8z" fill-rule="evenodd"/></svg><span class="arrow" aria-hidden="true">↗</span></div><h3>Bíblia com Apócrifos</h3><p>A space to read, explore, and study the Bible with the apocrypha.</p><span class="tag">READING + DISCOVERY</span></a>
-<a class="project" href="https://github.com/guilatrova/tryceratops"><div class="project-top"><svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3h9v2h2v7h-7v2h4v2h-6v6h-3v-4H8v4H5v-7H3v-3H1V7h2v3h2v2h3v-2h4zM16 5v2h2V5z" fill-rule="evenodd"/></svg><span class="arrow" aria-hidden="true">↗</span></div><h3>Tryceratops</h3><p>Small dinosaur. Better Python. A linter for cleaner exception handling.</p><span class="tag">PYTHON + OPEN SOURCE</span></a></div><div class="more-projects"><span>Also in the workshop</span><a href="https://github.com/guilatrova/gracy">Gracy ↗</a><a href="https://github.com/guilatrova/ast_selector">AST Selector ↗</a></div></section>
-<section id="writing" class="writing" aria-labelledby="writing-title"><div><p class="label"><span>02 /</span> Notes from the keyboard</p><h2 id="writing-title">Learn it.<br>Build it. Share it.</h2><p class="description">Thoughts on Python, good software, and the things you learn by making things.</p><a class="text-link" href="https://guicommits.com">Read Gui Commits ↗</a></div><div><a class="article" href="https://guicommits.com/python-yield-examples/"><span class="number">01</span><span class="article-title">Making sense of Python generators<small>PYTHON / GENERATORS</small></span><span class="arrow" aria-hidden="true">↗</span></a>
-<a class="article" href="https://guicommits.com/async-python-in-real-life/"><span class="number">02</span><span class="article-title">Async Python in real life<small>PYTHON / CONCURRENCY</small></span><span class="arrow" aria-hidden="true">↗</span></a>
-<a class="article" href="https://guicommits.com/how-sql-injection-attack-works-with-examples/"><span class="number">03</span><span class="article-title">How SQL injection actually works<small>SECURITY / UNDER THE HOOD</small></span><span class="arrow" aria-hidden="true">↗</span></a>
-<a class="article" href="https://guicommits.com/building-an-agnostic-microservice-architecture-with-kafka/"><span class="number">04</span><span class="article-title">Agnostic microservices with Kafka<small>ARCHITECTURE / DISTRIBUTED SYSTEMS</small></span><span class="arrow" aria-hidden="true">↗</span></a></div></section>
-<section class="book" aria-labelledby="book-title"><div><p class="label"><span>03 /</span> Go a little deeper</p><h2 id="book-title">Python like a PRO</h2><p>Less guesswork. Better Python.</p><a class="button" href="https://guilatrova.gumroad.com/l/python-like-a-pro">Get the book ↗</a></div><div><p>A practical series on the details that make a difference: logging, exceptions, and writing software you can keep building on.</p><div class="book-links"><a href="https://guicommits.com/how-to-log-in-python-like-a-pro/">Logging ↗</a><a href="https://guicommits.com/how-to-structure-exception-in-python-like-a-pro/">Structuring exceptions ↗</a><a href="https://guicommits.com/handling-exceptions-in-python-like-a-pro/">Handling exceptions ↗</a><a href="https://guicommits.com/series/python-like-a-pro/">Explore the full series ↗</a></div></div></section>
-<section class="newsletter" aria-labelledby="newsletter-title"><div><p class="label">LET'S STAY CURIOUS</p><h2 id="newsletter-title">A little signal for your inbox.</h2><p>New writing, projects, and things worth sharing.</p></div><a class="button" href="https://subscribe.guilatrova.dev/">Join the newsletter ↗</a></section>
-</main>
-<footer class="wrap"><div class="footer-main"><p>Keep making things<span aria-hidden="true">_</span></p><div class="socials" aria-label="Social profiles"><a href="https://github.com/guilatrova/">GitHub ↗</a><a href="https://www.linkedin.com/in/guilhermelatrova/">LinkedIn ↗</a><a href="https://twitter.com/intent/user?screen_name=guilatrova">X / Twitter ↗</a></div></div><div class="footer-bottom"><span>Gui Latrova · Built with curiosity &amp; a few pixels.<br>Based on <a href="https://littlelink.io">LittleLink</a>.</span><div class="support"><a href="https://github.com/sponsors/guilatrova/">Sponsor on GitHub ↗</a><a href="https://www.paypal.com/donate/?business=SUQKVABPUHUUQ&amp;no_recurring=0&amp;item_name=Thank+you+very+much+for+considering+supporting+my+work.+❤️+It+keeps+me+motivated+to+keep+producing+value+for+you.&amp;currency_code=USD">Support via PayPal ↗</a></div></div></footer>
-</body>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" type="image/png" href="images/avatar.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="masthead wrap">
+      <a class="brand" href="./" aria-label="Gui Latrova home"
+        ><img
+          src="images/avatar@2x.png"
+          alt=""
+          width="32"
+          height="32"
+        />gui<span> / latrova</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a><a href="#writing">Writing</a
+        ><a href="https://cv.guilatrova.dev">Résumé ↗</a>
+      </nav>
+    </header>
+    <main id="main" class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">
+            <span class="status" aria-hidden="true"></span> ENGINEER. MAKER.
+            ALWAYS CURIOUS.
+          </p>
+          <h1 id="hero-title">Hi, I'm Gui<span>I build things.</span></h1>
+          <p class="intro">
+            <strong>Software, stories, and little experiments.</strong> A
+            software engineer in Brazil, turning curiosity into useful things
+            for the world.
+          </p>
+          <div class="hero-links">
+            <a class="button" href="#projects"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            ><a class="text-link" href="https://github.com/guilatrova/"
+              >Find me on GitHub ↗</a
+            >
+          </div>
+        </div>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 320">
+            <path
+              class="outline"
+              d="M32 264H288M160 24V284M48 56H272V280H48Z"
+            />
+            <path
+              class="stem"
+              d="M152 120h16v120h-16zM136 160h16v16h-16zM120 144h16v16h-16zM168 192h16v16h-16zM184 176h16v16h-16z"
+            />
+            <path
+              class="leaf"
+              d="M56 112h48v16h32v16h16v32h-48v-16H72v-16H56zM184 144h16v-16h32v-16h32v48h-16v16h-32v16h-32z"
+            />
+            <path
+              class="light"
+              d="M136 40h32v16h16v16h16v32h-16v16h-16v24h-16v-24h-16v-16h-16V72h16zM56 112h48v16h32v16H88v-16H56zM216 128h16v-16h32v16h-16v16h-32z"
+            />
+            <path
+              class="leaf"
+              d="M112 232h96v16h-8v32h-16v16h-48v-16h-16v-32h-8z"
+            />
+            <path class="light" d="M104 224h112v16H104z" />
+            <path class="stem" d="M168 248h32v32h-16v16h-16z" />
+            <path
+              class="spark"
+              d="M240 48h8v8h8v8h-8v8h-8v-8h-8v-8h8zM64 200h8v8h8v8h-8v8h-8v-8h-8v-8h8z"
+            />
+            <path class="light" d="M272 208h8v8h-8zM80 64h8v8h-8z" /></svg
+          ><span class="caption">A LITTLE CURIOSITY. A LOT OF GROWTH.</span>
+        </div>
+      </section>
+      <div class="intro-bar">
+        <span>Independent mind. Builder at heart.</span
+        ><span>BASED IN BRAZIL · CONNECTED EVERYWHERE</span>
+      </div>
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-head">
+          <div>
+            <p class="label"><span>01 /</span> Made with curiosity</p>
+            <h2 id="projects-title">From idea to out there.</h2>
+          </div>
+        </div>
+        <div class="project-grid">
+          <a class="project" href="https://dayvid.ai"
+            ><div class="project-top">
+              <svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 6h12v2h2v2h2V8h3v10h-3v-2h-2v2H3zM6 3h2v2H6zM10 2h2v3h-2z"
+                  fill-rule="evenodd"
+                /></svg
+              ><span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>Dayvid</h3>
+            <p>
+              Your music, made visual. Turn a song into a publish-ready video
+              with AI.
+            </p>
+            <span class="tag">AI + CREATIVITY</span></a
+          >
+          <a class="project" href="https://bibliacomapocrifos.com"
+            ><div class="project-top">
+              <svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M2 4h8v2h4V4h8v15h-8v2h-4v-2H2zM10 8v9h4V8z"
+                  fill-rule="evenodd"
+                /></svg
+              ><span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>Bíblia com Apócrifos</h3>
+            <p>
+              A space to read, explore, and study the Bible with the apocrypha.
+            </p>
+            <span class="tag">READING + DISCOVERY</span></a
+          >
+          <a class="project" href="https://github.com/guilatrova/tryceratops"
+            ><div class="project-top">
+              <svg class="pixel-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 3h9v2h2v7h-7v2h4v2h-6v6h-3v-4H8v4H5v-7H3v-3H1V7h2v3h2v2h3v-2h4zM16 5v2h2V5z"
+                  fill-rule="evenodd"
+                /></svg
+              ><span class="arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>Tryceratops</h3>
+            <p>
+              Small dinosaur. Better Python. A linter for cleaner exception
+              handling.
+            </p>
+            <span class="tag">PYTHON + OPEN SOURCE</span></a
+          >
+        </div>
+        <div class="more-projects">
+          <span>Also in the workshop</span
+          ><a href="https://github.com/guilatrova/gracy">Gracy ↗</a
+          ><a href="https://github.com/guilatrova/ast_selector"
+            >AST Selector ↗</a
+          >
+        </div>
+      </section>
+      <section id="writing" class="writing" aria-labelledby="writing-title">
+        <div>
+          <p class="label"><span>02 /</span> Notes from the keyboard</p>
+          <h2 id="writing-title">Learn it.<br />Build it. Share it.</h2>
+          <p class="description">
+            Thoughts on Python, good software, and the things you learn by
+            making things.
+          </p>
+          <a class="text-link" href="https://guicommits.com"
+            >Read Gui Commits ↗</a
+          >
+        </div>
+        <div>
+          <a
+            class="article"
+            href="https://guicommits.com/python-yield-examples/"
+            ><span class="number">01</span
+            ><span class="article-title"
+              >Making sense of Python generators<small
+                >PYTHON / GENERATORS</small
+              ></span
+            ><span class="arrow" aria-hidden="true">↗</span></a
+          >
+          <a
+            class="article"
+            href="https://guicommits.com/async-python-in-real-life/"
+            ><span class="number">02</span
+            ><span class="article-title"
+              >Async Python in real life<small
+                >PYTHON / CONCURRENCY</small
+              ></span
+            ><span class="arrow" aria-hidden="true">↗</span></a
+          >
+          <a
+            class="article"
+            href="https://guicommits.com/how-sql-injection-attack-works-with-examples/"
+            ><span class="number">03</span
+            ><span class="article-title"
+              >How SQL injection actually works<small
+                >SECURITY / UNDER THE HOOD</small
+              ></span
+            ><span class="arrow" aria-hidden="true">↗</span></a
+          >
+          <a
+            class="article"
+            href="https://guicommits.com/building-an-agnostic-microservice-architecture-with-kafka/"
+            ><span class="number">04</span
+            ><span class="article-title"
+              >Agnostic microservices with Kafka<small
+                >ARCHITECTURE / DISTRIBUTED SYSTEMS</small
+              ></span
+            ><span class="arrow" aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="book" aria-labelledby="book-title">
+        <div>
+          <p class="label"><span>03 /</span> Go a little deeper</p>
+          <h2 id="book-title">Python like a PRO</h2>
+          <p>Less guesswork. Better Python.</p>
+          <a
+            class="button"
+            href="https://guilatrova.gumroad.com/l/python-like-a-pro"
+            >Get the book ↗</a
+          >
+        </div>
+        <div>
+          <p>
+            A practical series on the details that make a difference: logging,
+            exceptions, and writing software you can keep building on.
+          </p>
+          <div class="book-links">
+            <a href="https://guicommits.com/how-to-log-in-python-like-a-pro/"
+              >Logging ↗</a
+            ><a
+              href="https://guicommits.com/how-to-structure-exception-in-python-like-a-pro/"
+              >Structuring exceptions ↗</a
+            ><a
+              href="https://guicommits.com/handling-exceptions-in-python-like-a-pro/"
+              >Handling exceptions ↗</a
+            ><a href="https://guicommits.com/series/python-like-a-pro/"
+              >Explore the full series ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <p class="label">LET'S STAY CURIOUS</p>
+          <h2 id="newsletter-title">A little signal for your inbox.</h2>
+          <p>New writing, projects, and things worth sharing.</p>
+        </div>
+        <a class="button" href="https://subscribe.guilatrova.dev/"
+          >Join the newsletter ↗</a
+        >
+      </section>
+    </main>
+    <footer class="wrap">
+      <div class="footer-main">
+        <p>Keep making things<span aria-hidden="true">_</span></p>
+        <div class="socials" aria-label="Social profiles">
+          <a href="https://github.com/guilatrova/">GitHub ↗</a
+          ><a href="https://www.linkedin.com/in/guilhermelatrova/">LinkedIn ↗</a
+          ><a href="https://twitter.com/intent/user?screen_name=guilatrova"
+            >X / Twitter ↗</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >Gui Latrova · Built with curiosity &amp; a few pixels.<br />Based on
+          <a href="https://littlelink.io">LittleLink</a>.</span
+        >
+        <div class="support">
+          <a href="https://github.com/sponsors/guilatrova/"
+            >Sponsor on GitHub ↗</a
+          ><a
+            href="https://www.paypal.com/donate/?business=SUQKVABPUHUUQ&amp;no_recurring=0&amp;item_name=Thank+you+very+much+for+considering+supporting+my+work.+❤️+It+keeps+me+motivated+to+keep+producing+value+for+you.&amp;currency_code=USD"
+            >Support via PayPal ↗</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
