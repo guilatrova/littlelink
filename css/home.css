@@ -128,13 +128,13 @@ a:focus-visible {
 .pixel-symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
 .pixel-icon { width: var(--icon); height: var(--icon); flex: none; fill: currentColor; shape-rendering: crispEdges; }
 .button .pixel-icon { color: var(--accent); }
-.button-newsletter {
+.button-primary {
   --button-fill: var(--accent);
   --button-edge: var(--accent);
   color: var(--bg);
 }
-.button-newsletter .pixel-icon { color: inherit; }
-.button-newsletter:hover { --button-fill: var(--text); }
+.button-primary .pixel-icon { color: inherit; }
+.button-primary:hover { --button-fill: var(--text); }
 .page-content > br { display: none; }
 .link-heading {
   margin: var(--space-6) 0 var(--space-4);
